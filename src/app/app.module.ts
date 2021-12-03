@@ -9,11 +9,14 @@ import { AuthModule } from './modules/auth/auth.module';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatCardModule } from '@angular/material/card';
 import { MatCommonModule } from '@angular/material/core';
+import { SharedModule } from './modules/shared/shared.module';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -21,6 +24,7 @@ import { MatCommonModule } from '@angular/material/core';
     BrowserAnimationsModule,
     ServicesModule,
     AuthModule,
+    SharedModule,
     MatSliderModule,
     MatCardModule,
     MatCommonModule
