@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ServiceItemComponent } from './components/service-item/service-item.component';
-import { MatCardModule } from '@angular/material/card';
 import { ServiceListComponent } from './components/service-list/service-list.component';
 import { ServiceRoutingModule } from './service-routing.module';
+import { MaterialModule } from '../material/material.module';
 
 @NgModule({
   declarations: [
@@ -12,11 +12,12 @@ import { ServiceRoutingModule } from './service-routing.module';
   ],
   imports: [
     CommonModule,
-    MatCardModule,
-    ServiceRoutingModule
+    ServiceRoutingModule,
+    MaterialModule
   ],
   exports: [
     ServiceListComponent
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ServicesModule { }

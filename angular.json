@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ecommerce-aestheticsServices-angular": {
+    "ecommerce-aesthetics-angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ecommerce-aestheticsServices-angular",
+            "outputPath": "dist/ecommerce-aesthetics-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -34,7 +34,7 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -76,10 +76,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ecommerce-aestheticsServices-angular:build:production"
+              "browserTarget": "ecommerce-aesthetics-angular:build:production"
             },
             "development": {
-              "browserTarget": "ecommerce-aestheticsServices-angular:build:development"
+              "browserTarget": "ecommerce-aesthetics-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -87,7 +87,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ecommerce-aestheticsServices-angular:build"
+            "browserTarget": "ecommerce-aesthetics-angular:build"
           }
         },
         "test": {
@@ -103,7 +103,7 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -112,5 +112,5 @@
       }
     }
   },
-  "defaultProject": "ecommerce-aestheticsServices-angular"
+  "defaultProject": "ecommerce-aesthetics-angular"
 }

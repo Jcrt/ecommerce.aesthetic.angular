@@ -1,3 +1,4 @@
 export const paths = {
-  login: 'auth/login'
+  login: 'auth/login',
+  main: 'main'
 }
